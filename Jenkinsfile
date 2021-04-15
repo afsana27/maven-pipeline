@@ -10,7 +10,7 @@ stages
   {
     steps{   
   withMaven(jdk: 'java_home', maven: 'local_maven') {
-    sh 'package'}}
+    sh 'mvn clean package'}}
 }
 }
 }
