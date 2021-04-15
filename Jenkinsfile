@@ -18,7 +18,7 @@ stages
   stage('build my job') {
     steps{   
           withMaven(jdk: 'java_home', maven: 'local_maven') {
-    sh 'mvn build'}}    
+    sh 'mvn package'}}    
 }
 }
 }
